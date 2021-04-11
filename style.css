@@ -435,3 +435,12 @@ html {
         display: none;
     }
 }
+
+/* for mobile display */
+
+@media only screen and (min-width: 768px)
+{
+    .plane {
+        display: none;
+    }
+}
