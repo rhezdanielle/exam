@@ -622,8 +622,8 @@ html {
     width: 100px;
 
     /* position */
-    top: 55%;
-    left: 40%;
+    top: 57%;
+    left: 30%;
     position: absolute;
 
     /* text style */
@@ -668,24 +668,24 @@ html {
 /*      ===========================     */
 
 .forgot-password {
-    /* size */
-    height: 80%;
-    width: 50%;
+   /* size */
+   height: 60%;
+   width: 70%;
 
-    max-width: 100%;
-    
-    /* position */
-    top: 10%;
-    left: 30%;
-    position: fixed;
+   max-width: 100%;
+   
+   /* position */
+   top: 20%;
+   left: 20%;
+   position: fixed;
 
-    /*background*/
-    background-color: #CE97B0;;
+   /*background*/
+   background-color: #CE97B0;;
 
-    /* border */
-    border-radius: 10px;
+   /* border */
+   border-radius: 10px;
 
-    display: none;
+   display: none;
 }
 
 .forgot-password h2{
