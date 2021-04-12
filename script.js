@@ -33,5 +33,5 @@ function sign_in(){
     signIn.style.display = 'none';
     forgotPass.style.display = 'block'
 
-    retrievePass = false;
+    
 }

@@ -115,12 +115,6 @@
 }
 
 /* for PC display */
-
-@media only screen and (min-width: 1200px)
-{
-    *{
-        margin: 0px;
-    }
     
     html {
         background-color: #85C0D9;
@@ -159,1297 +153,9 @@
         
         background: url("src/img/airplane.png");
         background-repeat: no-repeat;
-        background-size: 300px;
+        background-size: 30%;
     
         animation: plane 6s infinite ease-in-out;
-    }
-    
-    .buildings {
-        height: 100%;
-        width: 100%;
-    
-        /*position*/
-        left: 0%;
-        top: 50%;
-        position: fixed;
-        
-        background: url("src/img/buildings.png");
-        background-repeat: repeat-x;
-        background-size: 600px;
-    
-        /* building animation */
-        animation: scroll-animation 10s linear infinite;
-        animation-fill-mode: both;
-    }
-    
-    .buildings-2 {
-        height: 100%;
-        width: 100%;
-    
-        /*position*/
-        left: 0%;
-        top: 60%;
-        position: fixed;
-        
-        background: url("src/img/buildings2.png");
-        background-repeat: repeat-x;
-        background-size: 600px;
-    
-        /* building animation */
-        animation: scroll-animation 150s reverse linear infinite;
-        animation-fill-mode: both;
-    }
-    
-    .sun{
-        height: 500px;
-        width: 500px;
-        max-width: auto;
-    
-        /* style */
-        background-color: #FBC6A4;
-        border-radius: 200%;
-        box-shadow: 0px 0px 20px #FBC6A4;
-    
-        /*position*/
-        left: 30%;
-        top: 50%;
-        position: fixed;
-        
-    
-        /* animation */
-        animation: day 2s ease-in-out;
-    }
-    
-    /*      ===========================     */
-    /*      ======= LOG IN FORM =======     */
-    /*      ===========================     */
-    
-    .login {
-        /* size */
-        height: 80%;
-        width: 30%;
-        min-width: 30%;
-        max-width: 30%;
-        
-        /* position */
-        top: 10%;
-        left: 55%;
-        position: fixed;
-        overflow: auto;
-    
-        /*background*/
-        background-color: #CE97B0;;
-    
-        /* border */
-        border-radius: 10px;
-    
-    }
-    
-    .login h2{
-        /* size */
-        height: 80%;
-        resize: both;
-    
-        /* position */
-        top: 15%;
-        left: 15%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Fredoka One', cursive;
-        font-size: 50px;
-        -webkit-text-stroke: 0.01px white;
-        color: #FBC6A4;
-        text-shadow: 0px 3px #9e938c;
-    }
-    
-    #email {
-          /* size */
-        height: 5%;
-        width: 300px;
-        min-width: 250px;
-    
-        /* position */
-        top: 35%;
-        left: 17%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-    
-        /* border */
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 3px;
-        border-radius: 10px;
-    }
-    
-    #password {
-        /* size */
-        height: 5%;
-        width: 300px;
-    
-        /* position */
-        top: 45%;
-        left: 17%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-    
-        /* border */
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 3px;
-        border-radius: 10px;
-    }
-    
-    /* log in button */
-    
-    .login button {
-        /* size */
-        height: 5%;
-        width: 100px;
-    
-        /* position */
-        top: 55%;
-        left: 40%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-        
-        /* border */
-        background-color:#FBC6A4;
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 2px;
-        border-radius: 10px;
-        box-shadow: 0px 2px white;
-    
-    }
-    
-    #forgot-password-link {
-        height: 5%;
-        width: 200px;
-    
-        /* position */
-        top: 65%;
-        left: 29%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-style: italic;
-        background: none;
-        border:none;
-        outline: none;
-        box-shadow: none;
-        font-size: 15px;
-        color: #ffffff;
-        cursor: pointer;
-    
-    }
-    
-    /*      ===========================     */
-    /*      ==== RETRIEVE PASSWORD ====     */
-    /*      ===========================     */
-    
-    .forgot-password {
-        /* size */
-        height: 80%;
-        width: 30%;
-          
-        /* position */
-        top: 10%;
-        left: 55%;
-        position: fixed;
-      
-        /*background*/
-        background-color: #CE97B0;
-      
-        /* border */
-        border-radius: 10px;
-    
-        display: none;
-    }
-    
-    .forgot-password h2{
-        /* size */
-        height: 80%;
-    
-        /* position */
-        top: 15%;
-        left: 15%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Fredoka One', cursive;
-        font-size: 50px;
-        -webkit-text-stroke: 0.01px white;
-        color: #FBC6A4;
-        text-shadow: 0px 3px #9e938c;
-    }
-    
-    .forgot-password button {
-        /* size */
-        height: 5%;
-        width: 100px;
-    
-        /* position */
-        top: 55%;
-        left: 40%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-        
-        /* border */
-        background-color:#FBC6A4;
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 2px;
-        border-radius: 10px;
-        box-shadow: 0px 2px white;
-    
-    }
-    
-    #sign-in {
-        height: 5%;
-        width: 200px;
-    
-        /* position */
-        top: 65%;
-        left: 29%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-style: italic;
-        background: none;
-        border:none;
-        outline: none;
-        box-shadow: none;
-        font-size: 15px;
-        color: #ffffff;
-        cursor: pointer;
-    
-    }
-}
-
-
-@media only screen and (min-width: 992px)
-{
-    *{
-        margin: 0px;
-    }
-    
-    html {
-        background-color: #85C0D9;
-        height: 100%;
-    }
-    
-    .gradient {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #CE97B0 50%);
-        height: 100%;
-    }
-    
-    .clouds {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        background: url("src/img/clouds.png");
-        background-repeat: repeat;
-        background-size: 600px;
-        background-repeat: repeat-x;
-    
-        /* cloud animation */
-        animation: scroll-animation 10s linear infinite;
-        animation-fill-mode: both;
-    
-    }
-    
-    .plane {
-        /* size */
-        height: 100%;
-        width: 100%;
-    
-        /*position*/
-        left: 10%;
-        top: 50%;
-        position: fixed;
-        
-        background: url("src/img/airplane.png");
-        background-repeat: no-repeat;
-        background-size: 300px;
-    
-        animation: plane 6s infinite ease-in-out;
-    }
-    
-    .buildings {
-        height: 100%;
-        width: 100%;
-    
-        /*position*/
-        left: 0%;
-        top: 50%;
-        position: fixed;
-        
-        background: url("src/img/buildings.png");
-        background-repeat: repeat-x;
-        background-size: 600px;
-    
-        /* building animation */
-        animation: scroll-animation 10s linear infinite;
-        animation-fill-mode: both;
-    }
-    
-    .buildings-2 {
-        height: 100%;
-        width: 100%;
-    
-        /*position*/
-        left: 0%;
-        top: 60%;
-        position: fixed;
-        
-        background: url("src/img/buildings2.png");
-        background-repeat: repeat-x;
-        background-size: 600px;
-    
-        /* building animation */
-        animation: scroll-animation 150s reverse linear infinite;
-        animation-fill-mode: both;
-    }
-    
-    .sun{
-        height: 500px;
-        width: 500px;
-        max-width: auto;
-    
-        /* style */
-        background-color: #FBC6A4;
-        border-radius: 200%;
-        box-shadow: 0px 0px 20px #FBC6A4;
-    
-        /*position*/
-        left: 30%;
-        top: 50%;
-        position: fixed;
-        
-    
-        /* animation */
-        animation: day 2s ease-in-out;
-    }
-    
-    /*      ===========================     */
-    /*      ======= LOG IN FORM =======     */
-    /*      ===========================     */
-    
-    .login {
-        /* size */
-        height: 80%;
-        width: 30%;
-        min-width: 30%;
-        max-width: 100%;
-        
-        /* position */
-        top: 10%;
-        left: 55%;
-        position: fixed;
-    
-        /*background*/
-        background-color: #CE97B0;;
-    
-        /* border */
-        border-radius: 10px;
-    
-        resize: non;
-        display: block;
-    }
-    
-    .login h2{
-        /* size */
-        height: 80%;
-    
-        /* position */
-        top: 15%;
-        left: 15%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Fredoka One', cursive;
-        font-size: 50px;
-        -webkit-text-stroke: 0.01px white;
-        color: #FBC6A4;
-        text-shadow: 0px 3px #9e938c;
-    }
-    
-    #email {
-          /* size */
-        height: 5%;
-        width: 200px;
-        min-width: 100px;
-    
-        /* position */
-        top: 35%;
-        left: 17%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 10px;
-        color: #AF9CB8;
-    
-        /* border */
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 3px;
-        border-radius: 10px;
-    }
-    
-    #password {
-        /* size */
-        height: 5%;
-        width: 300px;
-    
-        /* position */
-        top: 45%;
-        left: 17%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-    
-        /* border */
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 3px;
-        border-radius: 10px;
-    }
-    
-    /* log in button */
-    
-    .login button {
-        /* size */
-        height: 5%;
-        width: 100px;
-    
-        /* position */
-        top: 55%;
-        left: 40%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-        
-        /* border */
-        background-color:#FBC6A4;
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 2px;
-        border-radius: 10px;
-        box-shadow: 0px 2px white;
-    
-    }
-    
-    #forgot-password-link {
-        height: 5%;
-        width: 200px;
-    
-        /* position */
-        top: 65%;
-        left: 29%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-style: italic;
-        background: none;
-        border:none;
-        outline: none;
-        box-shadow: none;
-        font-size: 15px;
-        color: #ffffff;
-        cursor: pointer;
-    
-    }
-    
-    /*      ===========================     */
-    /*      ==== RETRIEVE PASSWORD ====     */
-    /*      ===========================     */
-    
-    .forgot-password {
-        /* size */
-        height: 80%;
-        width: 30%;
-          
-        /* position */
-        top: 10%;
-        left: 55%;
-        position: fixed;
-      
-        /*background*/
-        background-color: #CE97B0;
-      
-        /* border */
-        border-radius: 10px;
-    
-        display: none;
-    }
-    
-    .forgot-password h2{
-        /* size */
-        height: 80%;
-    
-        /* position */
-        top: 15%;
-        left: 15%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Fredoka One', cursive;
-        font-size: 50px;
-        -webkit-text-stroke: 0.01px white;
-        color: #FBC6A4;
-        text-shadow: 0px 3px #9e938c;
-    }
-    
-    .forgot-password button {
-        /* size */
-        height: 5%;
-        width: 100px;
-    
-        /* position */
-        top: 55%;
-        left: 40%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-        
-        /* border */
-        background-color:#FBC6A4;
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 2px;
-        border-radius: 10px;
-        box-shadow: 0px 2px white;
-    
-    }
-    
-    #sign-in {
-        height: 5%;
-        width: 200px;
-    
-        /* position */
-        top: 65%;
-        left: 29%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-style: italic;
-        background: none;
-        border:none;
-        outline: none;
-        box-shadow: none;
-        font-size: 15px;
-        color: #ffffff;
-        cursor: pointer;
-    
-    }
-}
-
-
-@media only screen and (min-width: 768px)
-{
-    *{
-        margin: 0px;
-    }
-    
-    html {
-        background-color: #85C0D9;
-        height: 100%;
-    }
-    
-    .gradient {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #CE97B0 50%);
-        height: 100%;
-    }
-    
-    .clouds {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        background: url("src/img/clouds.png");
-        background-repeat: repeat;
-        background-size: 600px;
-        background-repeat: repeat-x;
-    
-        /* cloud animation */
-        animation: scroll-animation 10s linear infinite;
-        animation-fill-mode: both;
-    
-    }
-    
-    
-    .buildings {
-        height: 100%;
-        width: 100%;
-    
-        /*position*/
-        left: 0%;
-        top: 50%;
-        position: fixed;
-        
-        background: url("src/img/buildings.png");
-        background-repeat: repeat-x;
-        background-size: 600px;
-    
-        /* building animation */
-        animation: scroll-animation 10s linear infinite;
-        animation-fill-mode: both;
-    }
-    
-    .buildings-2 {
-        height: 100%;
-        width: 100%;
-    
-        /*position*/
-        left: 0%;
-        top: 60%;
-        position: fixed;
-        
-        background: url("src/img/buildings2.png");
-        background-repeat: repeat-x;
-        background-size: 600px;
-    
-        /* building animation */
-        animation: scroll-animation 150s reverse linear infinite;
-        animation-fill-mode: both;
-    }
-    
-    .sun{
-        height: 500px;
-        width: 500px;
-        max-width: auto;
-    
-        /* style */
-        background-color: #FBC6A4;
-        border-radius: 200%;
-        box-shadow: 0px 0px 20px #FBC6A4;
-    
-        /*position*/
-        left: 30%;
-        top: 50%;
-        position: fixed;
-        
-    
-        /* animation */
-        animation: day 2s ease-in-out;
-    }
-    
-    /*      ===========================     */
-    /*      ======= LOG IN FORM =======     */
-    /*      ===========================     */
-    
-    .login {
-        /* size */
-        height: 80%;
-        width: 30%;
-        min-width: 30%;
-        max-width: 100%;
-        
-        /* position */
-        top: 10%;
-        left: 55%;
-        position: fixed;
-    
-        /*background*/
-        background-color: #CE97B0;;
-    
-        /* border */
-        border-radius: 10px;
-    
-        display: block;
-    }
-    
-    .login h2{
-        /* size */
-        height: 80%;
-    
-        /* position */
-        top: 15%;
-        left: 15%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Fredoka One', cursive;
-        font-size: 50px;
-        -webkit-text-stroke: 0.01px white;
-        color: #FBC6A4;
-        text-shadow: 0px 3px #9e938c;
-    }
-    
-    #email {
-          /* size */
-        height: 5%;
-        width: 300px;
-        min-width: 200px;
-    
-        /* position */
-        top: 35%;
-        left: 17%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-    
-        /* border */
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 3px;
-        border-radius: 10px;
-    }
-    
-    #password {
-        /* size */
-        height: 5%;
-        width: 300px;
-    
-        /* position */
-        top: 45%;
-        left: 17%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-    
-        /* border */
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 3px;
-        border-radius: 10px;
-    }
-    
-    /* log in button */
-    
-    .login button {
-        /* size */
-        height: 5%;
-        width: 100px;
-    
-        /* position */
-        top: 55%;
-        left: 40%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-        
-        /* border */
-        background-color:#FBC6A4;
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 2px;
-        border-radius: 10px;
-        box-shadow: 0px 2px white;
-    
-    }
-    
-    #forgot-password-link {
-        height: 5%;
-        width: 200px;
-    
-        /* position */
-        top: 65%;
-        left: 29%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-style: italic;
-        background: none;
-        border:none;
-        outline: none;
-        box-shadow: none;
-        font-size: 15px;
-        color: #ffffff;
-        cursor: pointer;
-    
-    }
-    
-    /*      ===========================     */
-    /*      ==== RETRIEVE PASSWORD ====     */
-    /*      ===========================     */
-    
-    .forgot-password {
-        /* size */
-        height: 80%;
-        width: 30%;
-          
-        /* position */
-        top: 10%;
-        left: 55%;
-        position: fixed;
-      
-        /*background*/
-        background-color: #CE97B0;
-      
-        /* border */
-        border-radius: 10px;
-    
-        display: none;
-    }
-    
-    .forgot-password h2{
-        /* size */
-        height: 80%;
-    
-        /* position */
-        top: 15%;
-        left: 15%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Fredoka One', cursive;
-        font-size: 50px;
-        -webkit-text-stroke: 0.01px white;
-        color: #FBC6A4;
-        text-shadow: 0px 3px #9e938c;
-    }
-    
-    .forgot-password button {
-        /* size */
-        height: 5%;
-        width: 100px;
-    
-        /* position */
-        top: 55%;
-        left: 40%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-        
-        /* border */
-        background-color:#FBC6A4;
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 2px;
-        border-radius: 10px;
-        box-shadow: 0px 2px white;
-    
-    }
-    
-    #sign-in {
-        height: 5%;
-        width: 200px;
-    
-        /* position */
-        top: 65%;
-        left: 29%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-style: italic;
-        background: none;
-        border:none;
-        outline: none;
-        box-shadow: none;
-        font-size: 15px;
-        color: #ffffff;
-        cursor: pointer;
-    
-    }
-}
-
-@media only screen and (min-width: 600px)
-{
-    *{
-        margin: 0px;
-    }
-    
-    html {
-        background-color: #85C0D9;
-        height: 100%;
-    }
-    
-    .gradient {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #CE97B0 50%);
-        height: 100%;
-    }
-    
-    .clouds {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        background: url("src/img/clouds.png");
-        background-repeat: repeat;
-        background-size: 600px;
-        background-repeat: repeat-x;
-    
-        /* cloud animation */
-        animation: scroll-animation 10s linear infinite;
-        animation-fill-mode: both;
-    
-    }
-    
-    .plane {
-        /* size */
-        height: 100%;
-        width: 100%;
-    
-        /*position*/
-        left: 10%;
-        top: 50%;
-        position: fixed;
-        
-        background: url("src/img/airplane.png");
-        background-repeat: no-repeat;
-        background-size: 300px;
-    
-        animation: plane 6s infinite ease-in-out;
-    }
-    
-    .buildings {
-        height: 100%;
-        width: 100%;
-    
-        /*position*/
-        left: 0%;
-        top: 50%;
-        position: fixed;
-        
-        background: url("src/img/buildings.png");
-        background-repeat: repeat-x;
-        background-size: 600px;
-    
-        /* building animation */
-        animation: scroll-animation 10s linear infinite;
-        animation-fill-mode: both;
-    }
-    
-    .buildings-2 {
-        height: 100%;
-        width: 100%;
-    
-        /*position*/
-        left: 0%;
-        top: 60%;
-        position: fixed;
-        
-        background: url("src/img/buildings2.png");
-        background-repeat: repeat-x;
-        background-size: 600px;
-    
-        /* building animation */
-        animation: scroll-animation 150s reverse linear infinite;
-        animation-fill-mode: both;
-    }
-    
-    .sun{
-        height: 500px;
-        width: 500px;
-        max-width: auto;
-    
-        /* style */
-        background-color: #FBC6A4;
-        border-radius: 200%;
-        box-shadow: 0px 0px 20px #FBC6A4;
-    
-        /*position*/
-        left: 30%;
-        top: 50%;
-        position: fixed;
-        
-    
-        /* animation */
-        animation: day 2s ease-in-out;
-    }
-    
-    /*      ===========================     */
-    /*      ======= LOG IN FORM =======     */
-    /*      ===========================     */
-    
-    .login {
-        /* size */
-        height: 80%;
-        width: 30%;
-        min-width: 30%;
-        max-width: 100%;
-        
-        /* position */
-        top: 10%;
-        left: 55%;
-        position: fixed;
-    
-        /*background*/
-        background-color: #CE97B0;;
-    
-        /* border */
-        border-radius: 10px;
-    
-        resize: non;
-        display: block;
-    }
-    
-    .login h2{
-        /* size */
-        height: 80%;
-    
-        /* position */
-        top: 15%;
-        left: 15%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Fredoka One', cursive;
-        font-size: 50px;
-        -webkit-text-stroke: 0.01px white;
-        color: #FBC6A4;
-        text-shadow: 0px 3px #9e938c;
-    }
-    
-    #email {
-          /* size */
-        height: 5%;
-        width: 300px;
-        min-width: 250px;
-    
-        /* position */
-        top: 35%;
-        left: 17%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-    
-        /* border */
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 3px;
-        border-radius: 10px;
-    }
-    
-    #password {
-        /* size */
-        height: 5%;
-        width: 300px;
-    
-        /* position */
-        top: 45%;
-        left: 17%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-    
-        /* border */
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 3px;
-        border-radius: 10px;
-    }
-    
-    /* log in button */
-    
-    .login button {
-        /* size */
-        height: 5%;
-        width: 100px;
-    
-        /* position */
-        top: 55%;
-        left: 40%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-        
-        /* border */
-        background-color:#FBC6A4;
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 2px;
-        border-radius: 10px;
-        box-shadow: 0px 2px white;
-    
-    }
-    
-    #forgot-password-link {
-        height: 5%;
-        width: 200px;
-    
-        /* position */
-        top: 65%;
-        left: 29%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-style: italic;
-        background: none;
-        border:none;
-        outline: none;
-        box-shadow: none;
-        font-size: 15px;
-        color: #ffffff;
-        cursor: pointer;
-    
-    }
-    
-    /*      ===========================     */
-    /*      ==== RETRIEVE PASSWORD ====     */
-    /*      ===========================     */
-    
-    .forgot-password {
-        /* size */
-        height: 80%;
-        width: 30%;
-          
-        /* position */
-        top: 10%;
-        left: 55%;
-        position: fixed;
-      
-        /*background*/
-        background-color: #CE97B0;
-      
-        /* border */
-        border-radius: 10px;
-    
-        display: none;
-    }
-    
-    .forgot-password h2{
-        /* size */
-        height: 80%;
-    
-        /* position */
-        top: 15%;
-        left: 15%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Fredoka One', cursive;
-        font-size: 50px;
-        -webkit-text-stroke: 0.01px white;
-        color: #FBC6A4;
-        text-shadow: 0px 3px #9e938c;
-    }
-    
-    .forgot-password button {
-        /* size */
-        height: 5%;
-        width: 100px;
-    
-        /* position */
-        top: 55%;
-        left: 40%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-        
-        /* border */
-        background-color:#FBC6A4;
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 2px;
-        border-radius: 10px;
-        box-shadow: 0px 2px white;
-    
-    }
-    
-    #sign-in {
-        height: 5%;
-        width: 200px;
-    
-        /* position */
-        top: 65%;
-        left: 29%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-style: italic;
-        background: none;
-        border:none;
-        outline: none;
-        box-shadow: none;
-        font-size: 15px;
-        color: #ffffff;
-        cursor: pointer;
-    
-    }
-}
-
-@media only screen and (max-width: 600px)
-{
-    *{
-        margin: 0px;
-    }
-    
-    html {
-        background-color: #85C0D9;
-        height: 100%;
-    }
-    
-    .gradient {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #CE97B0 50%);
-        height: 100%;
-    }
-    
-    .clouds {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        background: url("src/img/clouds.png");
-        background-repeat: repeat;
-        background-size: 600px;
-        background-repeat: repeat-x;
-    
-        /* cloud animation */
-        animation: scroll-animation 10s linear infinite;
-        animation-fill-mode: both;
-    
-    }
-    
-    .plane {
-        display: none;
     }
     
     .buildings {
@@ -1515,13 +221,14 @@
     .login {
         /* size */
         height: 50%;
-        width: 80%;
-        min-width: 80%;
+        width: 500px;
+        max-width: 100%;
         
         /* position */
         top: 20%;
-        margin: 0px 10%;
+        margin: 0 auto;
         position: fixed;
+        margin: 0 auto;
     
         /*background*/
         background-color: #CE97B0;;
@@ -1529,39 +236,34 @@
         /* border */
         border-radius: 10px;
     
-        resize: non;
-        display: block;
     }
     
     .login h2{
         /* size */
         height: 80%;
-        width: 100%;
+        width: 350px;
     
         /* position */
-        top: 15%;
-        margin: 0 15%;
-        position: absolute;
+        margin: 50px auto;
+        position: relative;
     
         /* text style */
         font-family: 'Fredoka One', cursive;
-        font-size: 30px;
+        font-size: 50px;
         -webkit-text-stroke: 0.01px white;
         color: #FBC6A4;
         text-shadow: 0px 3px #9e938c;
-
-        display: inline;
     }
     
     #email {
-        /* size */
+          /* size */
         height: 5%;
-        width: 200px;
-        min-width: 200px;
-
+        width: 300px;
+        min-width: 250px;
+    
         /* position */
         top: 35%;
-        margin: 0 15%;
+        margin: 0 20%;
         position: absolute;
     
         /* text style */
@@ -1574,33 +276,29 @@
         border-color: #AF9CB8;
         border-width: 3px;
         border-radius: 10px;
-
-        display: inline;
     }
     
     #password {
-        /* size */
-        height: 5%;
-        width: 200px;
-        min-width: 200px;
-
-        /* position */
-        top: 45%;
-        margin: 0 15%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-    
-        /* border */
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 3px;
-        border-radius: 10px;
-
-        display: inline;
+         /* size */
+         height: 5%;
+         width: 300px;
+         min-width: 250px;
+     
+         /* position */
+         top: 45%;
+         margin: 0 20%;
+         position: absolute;
+     
+         /* text style */
+         font-family: 'Varela Round', sans-serif;
+         font-size: 15px;
+         color: #AF9CB8;
+     
+         /* border */
+         border-style: solid;
+         border-color: #AF9CB8;
+         border-width: 3px;
+         border-radius: 10px;
     }
     
     /* log in button */
@@ -1612,7 +310,7 @@
     
         /* position */
         top: 55%;
-        margin: 0px 35%;
+        left: 40%;
         position: absolute;
     
         /* text style */
@@ -1627,17 +325,104 @@
         border-width: 2px;
         border-radius: 10px;
         box-shadow: 0px 2px white;
-
-        display: inline;
+    
     }
     
     #forgot-password-link {
+        height: 10%;
+        width: 200px;
+    
+        /* position */
+        top: 65%;
+        left: 30%;
+        position: absolute;
+    
+        /* text style */
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        font-style: italic;
+        background: none;
+        border:none;
+        outline: none;
+        box-shadow: none;
+        font-size: 15px;
+        color: #ffffff;
+        cursor: pointer;
+    
+    }
+    
+    /*      ===========================     */
+    /*      ==== RETRIEVE PASSWORD ====     */
+    /*      ===========================     */
+    
+    .forgot-password {
+        /* size */
+        height: 80%;
+        width: 30%;
+          
+        /* position */
+        top: 10%;
+        left: 55%;
+        position: fixed;
+      
+        /*background*/
+        background-color: #CE97B0;
+      
+        /* border */
+        border-radius: 10px;
+    
+        display: none;
+    }
+    
+    .forgot-password h2{
+        /* size */
+        height: 80%;
+    
+        /* position */
+        top: 15%;
+        left: 15%;
+        position: absolute;
+    
+        /* text style */
+        font-family: 'Fredoka One', cursive;
+        font-size: 50px;
+        -webkit-text-stroke: 0.01px white;
+        color: #FBC6A4;
+        text-shadow: 0px 3px #9e938c;
+    }
+    
+    .forgot-password button {
+        /* size */
+        height: 5%;
+        width: 100px;
+    
+        /* position */
+        top: 55%;
+        left: 40%;
+        position: absolute;
+    
+        /* text style */
+        font-family: 'Varela Round', sans-serif;
+        font-size: 15px;
+        color: #AF9CB8;
+        
+        /* border */
+        background-color:#FBC6A4;
+        border-style: solid;
+        border-color: #AF9CB8;
+        border-width: 2px;
+        border-radius: 10px;
+        box-shadow: 0px 2px white;
+    
+    }
+    
+    #sign-in {
         height: 5%;
         width: 200px;
     
         /* position */
         top: 65%;
-        margin: 10% 18%;
+        left: 29%;
         position: absolute;
     
         /* text style */
@@ -1651,7 +436,248 @@
         color: #ffffff;
         cursor: pointer;
     
-        display: inline;
+    }
+
+
+
+@media only screen and (max-width: 600px)
+{
+    *{
+        margin: 0px;
+    }
+
+    html {
+        background-color: #85C0D9;
+        height: 100%;
+    }
+    
+    .gradient {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #CE97B0 50%);
+        height: 100%;
+    }
+    
+    .clouds {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: url("src/img/clouds.png");
+        background-repeat: repeat;
+        background-size: 600px;
+        background-repeat: repeat-x;
+    
+        /* cloud animation */
+        animation: scroll-animation 10s linear infinite;
+        animation-fill-mode: both;
+    
+    }
+    
+    .plane {
+        /* size */
+        height: 100%;
+        width: 100%;
+    
+        /*position*/
+        left: 10%;
+        top: 50%;
+        position: fixed;
+        
+        background: url("src/img/airplane.png");
+        background-repeat: no-repeat;
+        background-size: 300px;
+    
+        animation: plane 6s infinite ease-in-out;
+        display: none;
+    }
+    
+    .buildings {
+        height: 100%;
+        width: 100%;
+    
+        /*position*/
+        left: 0%;
+        top: 50%;
+        position: fixed;
+        
+        background: url("src/img/buildings.png");
+        background-repeat: repeat-x;
+        background-size: 600px;
+    
+        /* building animation */
+        animation: scroll-animation 10s linear infinite;
+        animation-fill-mode: both;
+    }
+    
+    .buildings-2 {
+        height: 100%;
+        width: 100%;
+    
+        /*position*/
+        left: 0%;
+        top: 60%;
+        position: fixed;
+        
+        background: url("src/img/buildings2.png");
+        background-repeat: repeat-x;
+        background-size: 600px;
+    
+        /* building animation */
+        animation: scroll-animation 150s reverse linear infinite;
+        animation-fill-mode: both;
+    }
+    
+    .sun{
+        height: 500px;
+        width: 500px;
+        max-width: auto;
+    
+        /* style */
+        background-color: #FBC6A4;
+        border-radius: 200%;
+        box-shadow: 0px 0px 20px #FBC6A4;
+    
+        /*position*/
+        left: 30%;
+        top: 50%;
+        position: fixed;
+        
+    
+        /* animation */
+        animation: day 2s ease-in-out;
+    }
+    
+    /*      ===========================     */
+    /*      ======= LOG IN FORM =======     */
+    /*      ===========================     */
+    
+    .login {
+        /* size */
+        height: 40%;
+        width: 300px;
+        max-width: 100%;
+        
+        /* position */
+        top: 30%;
+        margin: 0 10%;
+        position: fixed;
+    
+        /*background*/
+        background-color: #CE97B0;;
+    
+        /* border */
+        border-radius: 10px;
+
+        display: block;
+    }
+    
+    .login h2{
+         /* size */
+         height: 80%;
+         width: 350px;
+     
+         /* position */
+         margin: 30px 50px;
+         position: relative;
+     
+         /* text style */
+         font-family: 'Fredoka One', cursive;
+         font-size: 30px;
+         -webkit-text-stroke: 0.01px white;
+         color: #FBC6A4;
+         text-shadow: 0px 3px #9e938c;
+    }
+    
+    #email {
+          /* size */
+        height: 5%;
+        width: 100px;
+        min-width: 250px;
+    
+        /* position */
+        top: 35%;
+        margin: 0 20px;
+        position: absolute;
+    
+        /* text style */
+        font-family: 'Varela Round', sans-serif;
+        font-size: 15px;
+        color: #AF9CB8;
+    
+        /* border */
+        border-style: solid;
+        border-color: #AF9CB8;
+        border-width: 3px;
+        border-radius: 10px;
+    }
+    
+    #password {
+           /* size */
+           height: 5%;
+           width: 100px;
+           min-width: 250px;
+       
+           /* position */
+           top: 45%;
+           margin: 0 20px;
+           position: absolute;
+       
+           /* text style */
+           font-family: 'Varela Round', sans-serif;
+           font-size: 15px;
+           color: #AF9CB8;
+       
+           /* border */
+           border-style: solid;
+           border-color: #AF9CB8;
+           border-width: 3px;
+           border-radius: 10px;
+    }
+    
+    /* log in button */
+    
+    .login button {
+        /* size */
+        height: 10%;
+        width: 100px;
+    
+        /* position */
+        margin: 5px -7%;
+        position: absolute;
+    
+        /* text style */
+        font-family: 'Varela Round', sans-serif;
+        font-size: 15px;
+        color: #AF9CB8;
+        
+        /* border */
+        background-color:#FBC6A4;
+        border-style: solid;
+        border-color: #AF9CB8;
+        border-width: 2px;
+        border-radius: 10px;
+        box-shadow: 0px 2px white;
+    
+    }
+    
+    #forgot-password-link {
+        height: 5%;
+        width: 200px;
+    
+        /* position */
+        top: 65%;
+        margin: 15px -40px;
+        position: absolute;
+    
+        /* text style */
+        font-family: 'Varela Round', sans-serif;
+        font-style: italic;
+        background: none;
+        border:none;
+        outline: none;
+        box-shadow: none;
+        font-size: 15px;
+        color: #ffffff;
+        cursor: pointer;
+    
     }
     
     /*      ===========================     */
@@ -1741,3 +767,4 @@
     
     }
 }
+
