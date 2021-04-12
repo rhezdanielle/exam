@@ -30,8 +30,8 @@ function sign_in(){
     var bg = document.documentElement;
 
     signIn.style.animations = "swap-form 2s forwards ease";
-        signIn.style.display = 'none';
-        forgotPass.style.display = 'block'
+    signIn.style.display = 'none';
+    forgotPass.style.display = 'block'
 
-        retrievePass = false;
+    retrievePass = false;
 }
