@@ -1541,15 +1541,17 @@
     
         /* position */
         top: 15%;
-        left: 7%;
+        margin: 0 20px;
         position: absolute;
     
         /* text style */
         font-family: 'Fredoka One', cursive;
-        font-size: 35px;
+        font-size: 30px;
         -webkit-text-stroke: 0.01px white;
         color: #FBC6A4;
         text-shadow: 0px 3px #9e938c;
+
+        display: inline;
     }
     
     #email {
@@ -1606,7 +1608,7 @@
     
     .login button {
         /* size */
-        height: 5%;
+        height: 10%;
         width: 100px;
     
         /* position */
