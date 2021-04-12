@@ -8,12 +8,11 @@ function forgot_password(){
 
     // animates background to night time
     sky.style.backgroundImage = "url('src/img/stars.png')";
-    sky.style.filter = "none";
     bg.style.animation = "night-sky 2s forwards ease";
     sun.style.animation = "moon 2s forwards ease";
    
-        //  transition animation from login to retrieve password //
- 
+       
+    // swaps to retrieve password
     signIn.style.animations = "swap-form 2s forwards ease";
     signIn.style.display = 'none';
     forgotPass.style.display = 'block'
@@ -22,16 +21,19 @@ function forgot_password(){
 };
 
 
-function sign_in(){
+function sign_in(){    // returns to sign in page
     var sun = document.getElementById('sun');
     var sky = document.getElementById('clouds');
     var forgotPass = document.getElementById('forgot-password-form');
     var signIn = document.getElementById("login-form");
     var bg = document.documentElement;
 
-    signIn.style.animations = "swap-form 2s forwards ease";
-    signIn.style.display = 'none';
-    forgotPass.style.display = 'block'
+    // animates background to day time
+    sky.style.backgroundImage = "url('src/img/clouds.png')";
+    bg.style.animation = "night-sky 1s reverse ease";
+    sun.style.animation = "day 2s forwards ease";
 
-    
+    forgotPass.style.animations = "swap-form 2s forwards ease";
+    forgotPass.style.display = 'none';
+    signIn.style.display = 'block';
 }

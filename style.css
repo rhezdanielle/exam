@@ -9,7 +9,7 @@
 /*      ======= ANIMATIONS ========     */
 /*      ===========================     */
 
-/* infinite scroll for the scroll-animation */
+/* infinite scroll animation*/
 @keyframes scroll-animation {
     from
     {
@@ -34,11 +34,22 @@
 }
 
 @keyframes day {
-    0% {
+    0%{
+        background-color: white;
+        box-shadow: 0px 0px 20px white;
+        transform: translateY(0px);
+    }
+    50% {
         transform: translateY(300px);
     }
+    60% {
+        background-color: #FBC6A4;
+        box-shadow: 0px 0px 20px #FBC6A4;
+    }
     100%{
-        transform: translateY(0px);
+        background-color: #FBC6A4;
+        box-shadow: 0px 0px 20px #FBC6A4;
+        transform: translateY(0px)
     }
 }
 
@@ -61,7 +72,7 @@
 
 }
 
-/* flips the form */
+/* swaps the forms */
 @keyframes swap-form {
     0%{
         transform: translateY(0px);
@@ -80,41 +91,25 @@
     }
 }
 
+/* changes background from day to night */
 @keyframes night-sky {
     0%{
         background-color: #85C0D9;
+    }
+    50%{
+        background-color: #5b7986;
     }
     100%{
         background-color: #18526e;
     }
 }
 
-/* changes display */
-@keyframes show-text {
-    0%{
-        display: none;
-    }
-    50%{
-        display: none;
-    }
-    100%{
-        display: block;
-    }
-}
 
-@keyframes hide-text {
-    0%{
-        display: block;
-    }
-    50%{
-        display: block;
-    }
-    100%{
-        display: none;
-    }
-}
 
-/* for PC display */
+/*   ========================= */
+/*   ======= PC Display ====== */
+/*   ========================= */
+
 @media only screen and (min-width: 600px) {
     
 
@@ -258,30 +253,65 @@
         color: #FBC6A4;
         text-shadow: 0px 3px #9e938c;
     }
-    
-    #email {
+
+    #email_1 {
+        /* size */
+      height: 7%;
+      width: 300px;
+      min-width: 250px;
+  
+      /* position */
+      top: 35%;
+      margin: 0 20%;
+      position: absolute;
+  
+      /* text style */
+      font-family: 'Varela Round', sans-serif;
+      font-size: 15px;
+      color: #AF9CB8;
+      text-indent: 10%;
+  
+      /* border */
+      border-style: solid;
+      border-color: #AF9CB8;
+      border-width: 3px;
+      border-radius: 10px;
+  }
+
+    #emailIcon {
           /* size */
-        height: 7%;
-        width: 300px;
-        min-width: 250px;
-    
-        /* position */
-        top: 35%;
-        margin: 0 20%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-    
-        /* border */
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 3px;
-        border-radius: 10px;
+      height: 7%;
+      width: 10px;
+      min-width: 10px;
+  
+      /* position */
+      top: 35%;
+      margin: 1.2% 22%;
+      position: absolute;
+  
+      /* text style */
+      font-size: 15px;
+      color: #AF9CB8;
+      z-index: 100;
     }
     
+    #passIcon {
+      /* size */
+      height: 7%;
+      width: 10px;
+      min-width: 10px;
+  
+      /* position */
+      top: 35%;
+      margin: 9.5% 22%;
+      position: absolute;
+  
+      /* text style */
+      font-size: 15px;
+      color: #AF9CB8;
+      z-index: 100;
+    }
+
     #password {
          /* size */
          height: 7%;
@@ -297,6 +327,7 @@
          font-family: 'Varela Round', sans-serif;
          font-size: 15px;
          color: #AF9CB8;
+         text-indent: 10%;
      
          /* border */
          border-style: solid;
@@ -422,6 +453,30 @@
          box-shadow: 0px 2px white;
     
     }
+
+    #email_2 {
+        /* size */
+      height: 7%;
+      width: 300px;
+      min-width: 250px;
+  
+      /* position */
+      top: 35%;
+      margin: 0 20%;
+      position: absolute;
+  
+      /* text style */
+      font-family: 'Varela Round', sans-serif;
+      font-size: 15px;
+      color: #AF9CB8;
+      text-indent: 10%;
+  
+      /* border */
+      border-style: solid;
+      border-color: #AF9CB8;
+      border-width: 3px;
+      border-radius: 10px;
+  }
     
     #sign-in {
         height: 10%;
@@ -448,7 +503,7 @@
 }
 
 /*   ========================= */
-/*   ======== Mobile ========= */
+/*   ===== Mobile Display ==== */
 /*   ========================= */
 
 @media only screen and (max-width: 600px) {
@@ -599,7 +654,7 @@
          text-shadow: 0px 3px #9e938c;
     }
     
-    #email {
+    #email_1 {
           /* size */
         height: 10%;
         width: 100px;
@@ -614,6 +669,7 @@
         font-family: 'Varela Round', sans-serif;
         font-size: 15px;
         color: #AF9CB8;
+        text-indent: 10%;
     
         /* border */
         border-style: solid;
@@ -621,28 +677,65 @@
         border-width: 3px;
         border-radius: 10px;
     }
+
+    
+    #emailIcon {
+        /* size */
+    height: 7%;
+    width: 10px;
+    min-width: 10px;
+
+    /* position */
+    top: 35%;
+    margin: 3% 10%;
+    position: absolute;
+
+    /* text style */
+    font-size: 15px;
+    color: #AF9CB8;
+    z-index: 100;
+  }
+
+  
+    #passIcon {
+        /* size */
+        height: 7%;
+        width: 10px;
+        min-width: 10px;
+
+        /* position */
+        top: 35%;
+        margin: 18% 10%;
+        position: absolute;
+
+        /* text style */
+        font-size: 15px;
+        color: #AF9CB8;
+        z-index: 100;
+    }
     
     #password {
-           /* size */
-           height: 10%;
-           width: 100px;
-           min-width: 250px;
+         /* size */
+        height: 10%;
+        width: 100px;
+        min-width: 250px;
        
-           /* position */
-           top: 50%;
-           margin: 0 20px;
-           position: absolute;
+        /* position */
+        top: 50%;
+        margin: 2% 20px;
+        position: absolute;
        
-           /* text style */
-           font-family: 'Varela Round', sans-serif;
-           font-size: 15px;
-           color: #AF9CB8;
+         /* text style */
+        font-family: 'Varela Round', sans-serif;
+        font-size: 15px;
+        color: #AF9CB8;
+        text-indent: 10%;
        
-           /* border */
-           border-style: solid;
-           border-color: #AF9CB8;
-           border-width: 3px;
-           border-radius: 10px;
+        /* border */
+        border-style: solid;
+        border-color: #AF9CB8;
+        border-width: 3px;
+        border-radius: 10px;
     }
     
     /* log in button */
@@ -760,6 +853,30 @@
     
     }
     
+    #email_2 {
+        /* size */
+      height: 10%;
+      width: 100px;
+      min-width: 250px;
+  
+      /* position */
+      top: 35%;
+      margin: 0 20px;
+      position: absolute;
+  
+      /* text style */
+      font-family: 'Varela Round', sans-serif;
+      font-size: 15px;
+      color: #AF9CB8;
+      text-indent: 10%;
+  
+      /* border */
+      border-style: solid;
+      border-color: #AF9CB8;
+      border-width: 3px;
+      border-radius: 10px;
+  }
+
     #sign-in {
         height: 5%;
         width: 200px;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,19 +20,21 @@
     <!--forgot password form-->
     <div class="forgot-password" id="forgot-password-form">
         <h2>Forgot Password</h2>
-        <form id = "forgotPassForm" action="">
-        <input type="text" class="email" id="email">
+        <i class="fa fa-envelope icon" id="emailIcon"></i>
+        <input type="text" class="email" id="email_2" placeholder="Email">
         <button>Submit</button>
-        <button id="sign-in" onclick= "return sign_in()">Return to Sign in instead</button>
+        <button id="sign-in" onclick= "return sign_in()">Sign in instead</button>
         </form>
     </div>
 
     <!--log in form-->
     <div class="login" id="login-form">
         <h2>Member Login</h2>
+        <i class="fa fa-envelope icon" id="emailIcon"></i>
         <form id = "loginForm" action="">
-        <input type="text" class="email" id="email">
-        <input type="text" class="password" id="password">
+        <i class="fa fa-key icon" id="passIcon"></i>
+        <input type="text" class="email" id="email_1" placeholder="Email">
+        <input type="text" class="password" id="password" placeholder="Password">
         <button>Login</button>
         <button id="forgot-password-link" onclick= "return forgot_password()">Forgot password?</button>
         </form>
