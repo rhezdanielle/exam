@@ -115,7 +115,9 @@
 }
 
 /* for PC display */
+@media only screen and (min-width: 600px) {
     
+
     html {
         background-color: #85C0D9;
         height: 100%;
@@ -226,9 +228,9 @@
         
         /* position */
         top: 20%;
-        margin: 0 auto;
+        margin: 0 55%;
         position: fixed;
-        margin: 0 auto;
+
     
         /*background*/
         background-color: #CE97B0;;
@@ -437,11 +439,10 @@
         cursor: pointer;
     
     }
+}
 
+@media only screen and (max-width: 600px) {
 
-
-@media only screen and (max-width: 600px)
-{
     *{
         margin: 0px;
     }
@@ -588,7 +589,7 @@
     
     #email {
           /* size */
-        height: 5%;
+        height: 10%;
         width: 100px;
         min-width: 250px;
     
@@ -611,12 +612,12 @@
     
     #password {
            /* size */
-           height: 5%;
+           height: 10%;
            width: 100px;
            min-width: 250px;
        
            /* position */
-           top: 45%;
+           top: 50%;
            margin: 0 20px;
            position: absolute;
        
@@ -636,11 +637,11 @@
     
     .login button {
         /* size */
-        height: 10%;
+        height: 15%;
         width: 100px;
     
         /* position */
-        margin: 5px -7%;
+        margin: -95px 100px;
         position: absolute;
     
         /* text style */
@@ -664,7 +665,7 @@
     
         /* position */
         top: 65%;
-        margin: 15px -40px;
+        margin: 50px 50px;
         position: absolute;
     
         /* text style */
@@ -766,5 +767,5 @@
         cursor: pointer;
     
     }
-}
 
+}
