@@ -1515,13 +1515,13 @@
     .login {
         /* size */
         height: 50%;
-        width: 75%;
+        width: 80%;
         min-width: 60%;
         max-width: 75%;
         
         /* position */
         top: 20%;
-        left: 15%;
+        margin: 0px 50px;
         position: fixed;
     
         /*background*/
@@ -1607,7 +1607,7 @@
     
         /* position */
         top: 55%;
-        left: 40%;
+        margin: 0px 100px;
         position: absolute;
     
         /* text style */
