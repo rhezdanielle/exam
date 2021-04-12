@@ -259,7 +259,7 @@
     
     #email {
           /* size */
-        height: 5%;
+        height: 7%;
         width: 300px;
         min-width: 250px;
     
@@ -282,12 +282,12 @@
     
     #password {
          /* size */
-         height: 5%;
+         height: 7%;
          width: 300px;
          min-width: 250px;
      
          /* position */
-         top: 45%;
+         top: 47%;
          margin: 0 20%;
          position: absolute;
      
@@ -311,7 +311,7 @@
         width: 100px;
     
         /* position */
-        top: 55%;
+        top: 60%;
         left: 40%;
         position: absolute;
     
@@ -335,7 +335,7 @@
         width: 200px;
     
         /* position */
-        top: 65%;
+        top: 70%;
         left: 30%;
         position: absolute;
     
@@ -358,76 +358,78 @@
     /*      ===========================     */
     
     .forgot-password {
-        /* size */
-        height: 80%;
-        width: 30%;
-          
-        /* position */
-        top: 10%;
-        left: 55%;
-        position: fixed;
-      
-        /*background*/
-        background-color: #CE97B0;
-      
-        /* border */
-        border-radius: 10px;
-    
-        display: none;
+       /* size */
+       height: 50%;
+       width: 500px;
+       max-width: 100%;
+       
+       /* position */
+       top: 20%;
+       margin: 0 55%;
+       position: fixed;
+
+   
+       /*background*/
+       background-color: #CE97B0;;
+   
+       /* border */
+       border-radius: 10px;
     }
     
     .forgot-password h2{
         /* size */
         height: 80%;
+        width: 350px;
     
         /* position */
-        top: 15%;
-        left: 15%;
-        position: absolute;
-    
+        margin: 50px 80px;
+        position: relative;
+
         /* text style */
         font-family: 'Fredoka One', cursive;
-        font-size: 50px;
+        font-size: 42px;
         -webkit-text-stroke: 0.01px white;
         color: #FBC6A4;
         text-shadow: 0px 3px #9e938c;
     }
+
     
     .forgot-password button {
-        /* size */
-        height: 5%;
-        width: 100px;
-    
-        /* position */
-        top: 55%;
-        left: 40%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-        
-        /* border */
-        background-color:#FBC6A4;
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 2px;
-        border-radius: 10px;
-        box-shadow: 0px 2px white;
+         /* size */
+         height: 10%;
+         width: 100px;
+     
+         /* position */
+         top: 50%;
+         left: 40%;
+         position: absolute;
+     
+         /* text style */
+         font-family: 'Varela Round', sans-serif;
+         font-size: 15px;
+         color: #AF9CB8;
+         
+         /* border */
+         background-color:#FBC6A4;
+         border-style: solid;
+         border-color: #AF9CB8;
+         border-width: 2px;
+         border-radius: 10px;
+         box-shadow: 0px 2px white;
     
     }
     
     #sign-in {
-        height: 5%;
+        height: 10%;
         width: 200px;
     
         /* position */
-        top: 65%;
-        left: 29%;
+        top: 70%;
+        left: 30%;
         position: absolute;
     
         /* text style */
+        text-align: center;
         font-family: 'Varela Round', sans-serif;
         font-style: italic;
         background: none;
@@ -440,6 +442,10 @@
     
     }
 }
+
+/*   ========================= */
+/*   ======== Mobile ========= */
+/*   ========================= */
 
 @media only screen and (max-width: 600px) {
 
@@ -687,62 +693,62 @@
     
     .forgot-password {
         /* size */
-        height: 80%;
-        width: 30%;
-          
+        height: 40%;
+        width: 300px;
+        max-width: 100%;
+        
         /* position */
-        top: 10%;
-        left: 55%;
+        top: 30%;
+        margin: 0 10%;
         position: fixed;
-      
+    
         /*background*/
-        background-color: #CE97B0;
-      
+        background-color: #CE97B0;;
+    
         /* border */
         border-radius: 10px;
-    
-        display: none;
+
+        display: block;
     }
     
     .forgot-password h2{
         /* size */
         height: 80%;
+        width: 350px;
     
         /* position */
-        top: 15%;
-        left: 15%;
-        position: absolute;
+        margin: 30px 30px;
+        position: relative;
     
         /* text style */
         font-family: 'Fredoka One', cursive;
-        font-size: 50px;
+        font-size: 30px;
         -webkit-text-stroke: 0.01px white;
         color: #FBC6A4;
         text-shadow: 0px 3px #9e938c;
     }
     
     .forgot-password button {
-        /* size */
-        height: 5%;
-        width: 100px;
-    
-        /* position */
-        top: 55%;
-        left: 40%;
-        position: absolute;
-    
-        /* text style */
-        font-family: 'Varela Round', sans-serif;
-        font-size: 15px;
-        color: #AF9CB8;
-        
-        /* border */
-        background-color:#FBC6A4;
-        border-style: solid;
-        border-color: #AF9CB8;
-        border-width: 2px;
-        border-radius: 10px;
-        box-shadow: 0px 2px white;
+         /* size */
+         height: 15%;
+         width: 100px;
+     
+         /* position */
+         margin: -130px 100px;
+         position: absolute;
+     
+         /* text style */
+         font-family: 'Varela Round', sans-serif;
+         font-size: 15px;
+         color: #AF9CB8;
+         
+         /* border */
+         background-color:#FBC6A4;
+         border-style: solid;
+         border-color: #AF9CB8;
+         border-width: 2px;
+         border-radius: 10px;
+         box-shadow: 0px 2px white;
     
     }
     
@@ -752,7 +758,7 @@
     
         /* position */
         top: 65%;
-        left: 29%;
+        margin: 30px 50px;
         position: absolute;
     
         /* text style */
