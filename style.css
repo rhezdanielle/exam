@@ -1516,12 +1516,11 @@
         /* size */
         height: 50%;
         width: 80%;
-        min-width: 60%;
-        max-width: 75%;
+        min-width: 80%;
         
         /* position */
         top: 20%;
-        margin: 0px 50px;
+        margin: 0px 10%;
         position: fixed;
     
         /*background*/
@@ -1541,7 +1540,7 @@
     
         /* position */
         top: 15%;
-        margin: 0 20px;
+        margin: 0 15%;
         position: absolute;
     
         /* text style */
@@ -1562,7 +1561,7 @@
 
         /* position */
         top: 35%;
-        margin: 0 20px;
+        margin: 0 15%;
         position: absolute;
     
         /* text style */
@@ -1587,7 +1586,7 @@
 
         /* position */
         top: 45%;
-        margin: 0 20px;
+        margin: 0 15%;
         position: absolute;
     
         /* text style */
@@ -1613,7 +1612,7 @@
     
         /* position */
         top: 55%;
-        margin: 0px 80px;
+        margin: 0px 35%;
         position: absolute;
     
         /* text style */
@@ -1638,7 +1637,7 @@
     
         /* position */
         top: 65%;
-        left: 29%;
+        margin: 10% 18%;
         position: absolute;
     
         /* text style */
@@ -1652,6 +1651,7 @@
         color: #ffffff;
         cursor: pointer;
     
+        display: inline;
     }
     
     /*      ===========================     */
