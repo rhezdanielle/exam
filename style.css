@@ -210,6 +210,22 @@
         /* animation */
         animation: day 2s ease-in-out;
     }
+
+    .logo{
+        /* size */
+        height: 100%;
+        width: 100%;
+    
+        /*position*/
+        margin: -10% 75%;
+        position: absolute;
+      
+        background-repeat: no-repeat;
+        background-image: url("src/img/logo.png");
+        background-size: 150px;
+
+        z-index: 100;
+  }
     
     /*      ===========================     */
     /*      ======= LOG IN FORM =======     */
@@ -610,6 +626,22 @@
         /* animation */
         animation: day 2s ease-in-out;
     }
+
+    .logo{
+        /* size */
+        height: 100%;
+        width: 100%;
+    
+        /*position*/
+        margin: -22% 60%;
+        position: absolute;
+      
+        background-repeat: no-repeat;
+        background-image: url("src/img/logo.png");
+        background-size: 150px;
+
+        z-index: 100;
+  }
     
     /*      ===========================     */
     /*      ======= LOG IN FORM =======     */
@@ -746,7 +778,7 @@
         width: 100px;
     
         /* position */
-        margin: -95px 100px;
+        margin: -85px 100px;
         position: absolute;
     
         /* text style */
